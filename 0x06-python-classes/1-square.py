@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Working with oop in python"""
+"""Working with OOP in python"""
+
 
 class Square():
     """Implementing the square class"""
-    def _int_(self, size):
+    def __init__(self, size):
         """ initialize the class
         Args:
-            size (int): size of the square
+           size (int): size of the square
         """
-        self._size = size
+        self.__size = size
