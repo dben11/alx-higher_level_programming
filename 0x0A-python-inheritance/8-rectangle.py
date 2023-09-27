@@ -1,19 +1,28 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle that inherits from BaseGeometry."""
+"""
+Defines a Rectangle class that inherits from BaseGeometry.
+"""
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
-
 class Rectangle(BaseGeometry):
-    """Represent a rectangle using BaseGeometry."""
+    """
+    Represents a rectangle with a width and height.
+    """
 
     def __init__(self, width, height):
-        """Intialize a new Rectangle.
+        """
+        Initializes a Rectangle instance.
 
         Args:
-            width (int): The width of the new Rectangle.
-            height (int): The height of the new Rectangle.
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
         """
+        # Validate width and height using integer_validator
         self.integer_validator("width", width)
-        self.__width = width
         self.integer_validator("height", height)
+        
+        # Set the width and height as private attributes
+        self.__width = width
         self.__height = height
+
