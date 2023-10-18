@@ -1,5 +1,4 @@
--- Create a table called first_table in the current databases
-in your MYSQL server.
+-- Create a table called first_table in the current databases in your MYSQL server.
 -- first_table description
 --              id INT
 --              name VARCHAR(256)
