@@ -7,4 +7,4 @@ CREATE DATABASE IF NOT EXISTS htbn_0d_usa;
 CREATE TABLE IF NOT EXIST htbn_0d_usa.cities (id INT NOT NULL PRIMARY KEY AUTO-INCREMENT,
 state_id INT NOT NULL,
 NAME varchar(256) NOT NULL,
-FOREIGN KEY(state_id) REFERENCE htbn_0d_usa.states(id));
+FOREIGN KEY(state_id) REFERENCES htbn_0d_usa.states(id));
