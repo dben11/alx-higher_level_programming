@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const check = process.argv[2];
 
-if (check === process.argv[2]) {
-  console.log('No arguments');
+
+if (process.argv[2]) {
+  console.log(process.argc[2]);
 } else {
-  console.log('arguments');
+  console.log('No argument');
 }
