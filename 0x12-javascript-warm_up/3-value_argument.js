@@ -2,7 +2,7 @@
 
 const check = process.argv[2];
 
-if (check === "undefined") {
+if (check !== process.argv[2]) {
   console.log(process.argv[2]);
 } else {
   console.log('No argument');
