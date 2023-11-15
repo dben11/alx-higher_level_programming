@@ -2,8 +2,8 @@
 
 const check = process.argv[2];
 
-if (check !== process.argv[2]) {
-  console.log('process.argv[2]');
+if (check === process.argv[2]) {
+  console.log('No arguments');
 } else {
-  console.log('No argument');
+  console.log('arguments');
 }
