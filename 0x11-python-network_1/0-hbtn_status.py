@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""write a python script that fetches the following url"""
+
+"""A script that
+- fetches https://alx-intranet.hbtn.io/status.
+- uses urlib package
+"""
 import urllib.request
 
 url = "https://alx-intranet.hbtn.io/status"
